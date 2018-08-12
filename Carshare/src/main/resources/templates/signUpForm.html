@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prisijungimas</title>
+</head>
+<body>
+
+<div class="js-show-signup-form cnd-hidden">
+    <div class="cnd-overlay" onclick="$('.js-show-signup-form').addClass('cnd-hidden')"></div>
+    <div class="cnd-overlay-content">
+        <div class="cnd-panel cnd-w-full">
+
+            <div class="cnd-panel__header cnd-text-center">
+               Prisijungti nemokamai
+            </div>
+
+            <form class="rails-form" id="new_member" action="/join" accept-charset="UTF-8" method="post">
+                <input name="utf8" type="hidden" value="✓">
+                <input type="hidden" name="authenticity_token"
+                       value="anPzvN9irZA5is6co4Bs9Yb4XP8433Wwf/Onrr0rNkotj5DR/dNM1Ct/ILNNCoyKVVTmJQ21V5THnNp7yehxow==">
+
+
+                <div class="cnd-mt-4">
+                    <script src="https://www.google.com/recaptcha/api.js?render="></script>
+
+
+                    <input type="hidden" name="member[referral_code]" id="member_referral_code">
+                    <input type="hidden" name="member[promo_code]" id="member_promo_code">
+                    <input class="js-captcha-token" type="hidden" name="member[captcha_token]"
+                           id="member_captcha_token">
+
+                    <div class="cnd-pb-2 cnd-pb-4 form-field ">
+                        <label class="cnd-label cnd-mb-4" for="member_email_email_address">El pašto adresas</label>
+                        <input class="cnd-input" required="required" type="email" name="member[email]"
+                               id="member_email">
+                    </div>
+                    <div class="cnd-pb-2 cnd-pb-3 form-field ">
+                        <label class="cnd-label cnd-mb-4" for="member_password_choose_a_password">Jūsų slaptažodis</label>
+                        <input class="cnd-input js-password" required="required" type="password" name="member[password]"
+                               id="member_password">
+                    </div>
+
+                </div>
+
+                <input type="submit" name="commit" value="Sign up" class="cnd-btn cnd-btn--solid cnd-btn--block"
+                       id="member_join" data-disable-with="Sign up">
+            </form>
+            <div class="cnd-text-center cnd-mt-6">
+                <p class="cnd-text-grey cnd-text-sm">Jau esate narys?
+                    <a class="cnd-link cnd-link--blue" href="/login">Prisijungti čia</a>.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

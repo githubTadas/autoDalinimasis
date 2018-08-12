@@ -1,0 +1,48 @@
+<div th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <header class="topbar container" data-topbar>
+        <div class="topbar_inner">
+            <div class="topbar_logo-wrapper">
+                <a class="topbar_logo" title="Home" href="/hc/en-gb">
+                    <img src="https://theme.zdassets.com/theme_assets/212153/2d6c4c6458eea8b9017b1b1907a526f2e182c238.png" alt="Logo" class="logo">
+                </a>
+                <span class="topbar__help-center-name">Pagalba</span>
+            </div>
+            <div class="topbar-buttons">
+                <button class="btn btn--topbar btn--toggle-search" data-toggle-search="">
+                    <span class="fa fa-search"></span>
+                </button>
+                <button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu" data-toggle-menu="">
+                    <span class="tcon-menu__lines" aria-hidden="true"></span>
+                    <span class="tcon-visuallyhidden">toggle menu</span>
+                </button>
+            </div>
+            <div class="search-box search-box--topbar" data-search-topbar="">
+                <form role="search" class="search" data-search="" action="/hc/en-gb/search" accept-charset="UTF-8" method="get">
+                    <input name="utf8" type="hidden" value="✓">
+                    <input type="search" name="query" id="query" placeholder="Ieškoti" aria-label="Search">
+                    <input type="submit" name="commit" value="Ieškoti"></form>
+            </div>
+            <div class="search-mobile" data-search-mobile="">
+                <div class="container-inner">
+                    <form role="search" class="search-box search-box--mobile" data-search="" action="/hc/en-gb/search" accept-charset="UTF-8" method="get">
+                        <input name="utf8" type="hidden" value="✓">
+                        <input type="search" name="query" id="query" placeholder="Ieškoti" aria-label="Search">
+                        <input type="submit" name="commit" value="Ieškoti">
+                        <button class="btn btn--default btn--search-topbar-close" data-toggle-search="true">
+                            <span class="fa fa-close"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="topbar__controls" data-menu="">
+                <a href="https://carnextdoor.com.au" class="topbar__link">Atgal į puslapį</a>
+                <button class="btn btn--topbar btn--toggle-search btn--toggle-search hidden-xs hidden-sm hidden-md hidden" data-toggle-search="">
+                    <span class="fa fa-search"></span>
+                </button>
+                <a href="https://www.carnextdoor.com.au/support/contact?step=2" class="btn btn--topbar submit-a-request">Susisiekite su pagalba</a>
+                <a class="login" data-auth-action="signin" role="button" href="/hc/en-gb/signin?return_to=https%3A%2F%2Fsupport.carnextdoor.com.au%2Fhc%2Fen-gb&amp;locale=1176">Prisijungti</a>
+            </div>
+        </div>
+    </header>
+</div>

@@ -1,0 +1,80 @@
+<div th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
+    <header class="cnd-top-nav cnd-font">
+        <nav class="cnd-nav cnd-relative">
+            <ul class="cnd-tabs cnd-overflow-visible" role="tablist">
+                <li class="cnd-tabs__tab cnd-tabs__tab--xl cnd-nav__logo-wrapper" role="tab">
+                    <a class="cnd-nav__logo" href="/">
+                        <img alt="Car Next Door" class="cnd-xs-inline-block"
+                             src="https://www.carnextdoor.com.au/assets/car_next_door_circle-914fbfd144f7d3ec32308cc8697c504027e99b4e04011e0c0ce5b359c5e22737.svg"></a>
+                </li>
+                <form action="/search" class="cnd-nav__search">
+                    <input autocomplete="off"
+                                                                      class="cnd-nav__search-input cnd-input"
+                                                                      data-location-input="" name="location"
+                                                                      placeholder="Pabandykite &quot;Kauną&quot;"
+                                                                      type="text">
+                    <div class="cnd-nav__search-icon">
+                        <div class="cnd-nav__search-icon__circle"></div>
+                        <div class="cnd-nav__search-icon__rectangle"></div>
+                    </div>
+                    <input class="cnd-hidden" type="submit">
+                </form>
+                <li class="cnd-tabs__tab cnd-tabs__tab--xl cnd-hidden cnd-onhover-menu how-it-works-nav lg:cnd-flex">
+                    <a aria-expanded="false" aria-haspopup="true" class="cnd-tabs__tab__link" href="/how-to-borrow-cars">Kaip
+                        tai veikia&nbsp;
+                        <span class="caret relative xs-display-none lg-inline-block"></span>
+                    </a>
+                    <ul class="cnd-onhover-menu__content cnd--mt-4">
+                        <li>
+                            <a class="cnd-link cnd-link--grey" href="/how-to-borrow-cars">Išsinuomuoti automobilį</a>
+                        </li>
+                        <li>
+                            <a class="cnd-link cnd-link--grey" href="/how-to-list-your-car">Išnuomuoti savo automobilį</a>
+                        </li>
+                        <li>
+                            <a class="cnd-link cnd-link--grey" href="/borrower-rates-and-plans">Kainos nuomininkams</a>
+                        </li>
+                        <li>
+                            <a class="cnd-link cnd-link--grey" href="/owner-rates-and-plans">Kainos savininkams</a>
+                        </li>
+                        <li>
+                            <a class="cnd-link cnd-link--grey" href="https://carnextdoor.zendesk.com/hc/en-gb"
+                               rel="noopener noreferrer" target="_blank">Skaityti DUK</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cnd-tabs__tab cnd-tabs__tab--xl cnd-hidden lg:cnd-flex" role="tab">
+                    <a class="cnd-tabs__tab__link" href="/search">Rasti automobilį</a>
+                </li>
+                <li class="cnd-tabs__tab cnd-tabs__tab--xl cnd-hidden lg:cnd-flex" role="tab">
+                    <a class="cnd-tabs__tab__link" href="/support">Pagalba</a>
+                </li>
+                <li class="cnd-tabs__tab cnd-tabs__tab--xl cnd-hidden lg:cnd-flex" role="tab">
+                    <a class="cyp-test-login cnd-tabs__tab__link" href="/login">Prisijungti</a>
+                </li>
+                <li class="cnd-tabs__tab cnd-tabs__tab--xs cnd-hidden cnd-onhover-menu join-dropdown lg:cnd-flex"
+                    role="tab">
+                    <a aria-expanded="false" aria-haspopup="true" class="cnd-btn cnd-btn--solid" href="/join"
+                       onclick="$('.js-show-signup-form').removeClass('cnd-hidden'); return false;">Registruotis&nbsp;
+                        <span class="caret relative xs-display-none lg-inline-block"></span>
+                    </a>
+                    <ul class="cnd-onhover-menu__content cnd-pin-r cnd-my-1 cnd-mr-4">
+                        <li>
+                            <a class="cnd-link cnd-link--grey" href="/join"
+                               onclick="$('.js-show-signup-form').removeClass('cnd-hidden'); return false;">Registruotis
+                                kaip nuomininkui</a>
+                        </li>
+                        <li>
+                            <a class="cnd-link cnd-link--grey" href="/list-your-car">Įkelkite savo automobilį</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cnd-tabs__tab cnd-tabs__tab--xl cnd-ml-4 lg:cnd-hidden" role="tab">
+                    <div class="js-sidemenu-open" role="button">
+                        <img src="https://www.carnextdoor.com.au/assets/hamburger_icon-9ee6bd3a2ec956e883d9308992a521adb8bf3361912fa26f5753c284e6818ad8.svg"
+                             alt="Hamburger icon"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
